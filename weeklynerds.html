@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navBarProjecten">
+            <ul>
+                <li class="logoGroot"><a href="./index.html"><img src="./images/logo_wit-10.png"
+                            alt="logo koppert media & design"></a></li>
+                <li class="logoKlein"><a href="./index.html"><img src="./images/Favicon-13.png"
+                            alt="logo koppert media & design"></a></li>
+                <li class="navKnop"><a class="navKnopText" href="./leerdoelen.html">Leerdoelen</a></li>
+                <li class="navKnop"><a class="navKnopText" href="./projecten.html">Projecten</a></li>
+                <li class="navKnop"><a class="navKnopText" href="./weeklynerds.html">Weekly Nerds</a></li>
+                <li class="githubKnop">
+                    <a href="https://github.com/ThijsKoppert34" target="_blank">
+                        <svg class="githubIcon" width="51" height="51" viewBox="0 0 51 51" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.5 0C11.4172 0 0 11.4172 0 25.5C0 39.5828 11.4172 51 25.5 51C39.5828 51 51 39.5828 51 25.5C51 11.4172 39.5828 0 25.5 0ZM31.6937 44.5393C30.7026 44.7316 30.35 44.122 30.35 43.601C30.35 42.9565 30.3729 40.8508 30.3729 38.2341C30.3729 36.4092 29.7483 35.2189 29.0461 34.6123C33.401 34.1282 37.9771 32.4746 37.9771 24.9621C37.9771 22.8265 37.218 21.0823 35.964 19.7127C36.1672 19.2196 36.8365 17.2304 35.7717 14.537C35.7717 14.537 34.1321 14.0121 30.3988 16.5421C28.8359 16.1088 27.1615 15.8917 25.499 15.8837C23.8375 15.8917 22.1641 16.1088 20.6032 16.5421C16.8659 14.0121 15.2233 14.537 15.2233 14.537C14.1615 17.2314 14.8308 19.2206 15.034 19.7127C13.7829 21.0823 13.0189 22.8275 13.0189 24.9621C13.0189 32.4567 17.586 34.1331 21.93 34.6282C21.3702 35.1163 20.8642 35.9799 20.6879 37.2439C19.5713 37.744 16.7404 38.6076 14.9962 35.6183C14.9962 35.6183 13.9622 33.7407 11.9979 33.6022C11.9979 33.6022 10.0894 33.5773 11.8645 34.7916C11.8645 34.7916 13.1464 35.3932 14.036 37.6533C14.036 37.6533 15.1845 41.1446 20.6251 39.9613C20.6341 41.5959 20.652 43.1368 20.652 43.603C20.652 44.12 20.2934 44.7246 19.3162 44.5443C11.5447 41.9585 5.9407 34.6272 5.9407 25.9861C5.9407 15.1845 14.6984 6.42779 25.499 6.42779C36.2996 6.42779 45.0573 15.1835 45.0573 25.9861C45.0573 34.6242 39.4603 41.9535 31.6937 44.5423V44.5393ZM20.152 38.4622C19.9249 38.504 19.7147 38.4064 19.6858 38.251C19.6579 38.0896 19.8223 37.9283 20.0494 37.8864C20.2805 37.8466 20.4877 37.9412 20.5175 38.1006C20.5454 38.258 20.3831 38.4193 20.152 38.4622ZM19.0274 38.3536C19.0324 38.515 18.8451 38.6484 18.612 38.6514C18.3779 38.6564 18.1887 38.5259 18.1867 38.3675C18.1867 38.2042 18.371 38.0727 18.604 38.0687C18.8361 38.0647 19.0274 38.1942 19.0274 38.3536ZM17.4267 38.2361C17.3788 38.3895 17.1597 38.4582 16.9376 38.3934C16.7164 38.3267 16.572 38.1474 16.6158 37.992C16.6617 37.8376 16.8828 37.7649 17.1059 37.8346C17.327 37.9014 17.4715 38.0797 17.4257 38.2351L17.4267 38.2361ZM15.9694 37.6045C15.8618 37.7231 15.6337 37.6912 15.4663 37.5298C15.295 37.3724 15.2482 37.1483 15.3548 37.0298C15.4634 36.9112 15.6935 36.9451 15.8618 37.1045C16.0311 37.2619 16.0829 37.487 15.9694 37.6045ZM14.4762 36.3475C14.3567 36.1731 14.3567 35.965 14.4792 35.8813C14.6007 35.7976 14.794 35.8733 14.9165 36.0456C15.036 36.222 15.036 36.4311 14.9135 36.5158C14.794 36.5995 14.5978 36.5208 14.4762 36.3475ZM14.1425 35.3892C14.0489 35.4759 13.8666 35.435 13.7431 35.2986C13.6146 35.1621 13.5917 34.9798 13.6853 34.8922C13.782 34.8055 13.9583 34.8463 14.0868 34.9828C14.2153 35.1203 14.2402 35.3016 14.1425 35.3892ZM13.3506 34.5057C13.3078 34.6033 13.1544 34.6322 13.015 34.5654C12.8725 34.5017 12.7938 34.3692 12.8396 34.2716C12.8815 34.172 13.0349 34.1441 13.1763 34.2108C13.3188 34.2746 13.3995 34.4091 13.3506 34.5057Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="allNerds">
+        <h1 class="captionNerds">Weekly Nerds</h1>
+        <!-- Nerd 1 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd1-toggle" class="nerdToggle" hidden>
+            <label for="nerd1-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 1</p>
+                    <small>05 februari '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>The Rule of <span class="cijferPaars">Least Power</span></h3>
+                        <small>Kilian Valkhof</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Je kunt met CSS veel meer dan alleen dingen mooi maken, je kunt er ook echt interactie en logica
+                        mee bouwen.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>In de presentatie ging het over allemaal handige CSS-features die je kunt gebruiken om dingen als
+                        accordeons, pop-ups (dialogs) en zelfs animaties te maken. Je hoeft daarvoor niet altijd
+                        JavaScript te gebruiken. Dingen als :checked, :has() en appearance: none geven je best veel
+                        controle. Ook scrollen kun je smooth maken, en je kunt zelfs bepalen hoeveel ruimte er boven je
+                        content moet zitten als je ergens naartoe scrolt. Superveel kleine dingen die samen best
+                        krachtig zijn.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>Met :has() en :checked kun je best slimme dingen doen zonder JS.</li>
+                        <li>Accordeons en dialogs zijn eigenlijk supermakkelijk te maken met alleen HTML & CSS.</li>
+                        <li>CSS is niet alleen voor styling — je kunt er echt interactieve elementen mee bouwen.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 2 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd2-toggle" class="nerdToggle" hidden>
+            <label for="nerd2-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 2</p>
+                    <small>26 februari '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Waarom is het web<span class="cijferPaars"> gratis?</span></h3>
+                        <small>Peter-Paul Koch</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Waarom zijn websites eigenlijk nog steeds gratis — en wat als we daar eens mee stoppen?
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Peter-Paul vertelde dat hij gestopt is met zijn bekende site omdat hij er niks aan verdiende. Hij
+                        vindt dat het raar is dat we verwachten dat alles op het web gratis is. Als het gratis is, dan
+                        krijg je advertenties — en dan bepalen techbedrijven wat jij te zien krijgt. Hij wil juist dat
+                        we gaan betalen voor wat we écht waardevol vinden, bijvoorbeeld op basis van hoeveel tijd je
+                        ergens doorbrengt. Er zijn al gesprekken en projecten gaande om dit soort modellen te bouwen.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            Als we niet zelf betalen voor content, dan bepalen anderen wat we zien.
+                        </li>
+                        <li>
+                            Tijd is geld — letterlijk, volgens dit model.
+                        </li>
+                        <li>
+                            Het web als 'gratis gewoonte' is eigenlijk een rare standaard geworden.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 3 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd3-toggle" class="nerdToggle" hidden>
+            <label for="nerd3-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 3</p>
+                    <small>03 maart '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>De kunst van<span class="cijferPaars"> Typography</span></h3>
+                        <small>Roel Nieskens</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Een font is niet zomaar een lettertje — er zit veel meer slimme techniek en ontwerp achter dan je
+                        denkt.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Roel legde uit wat fonts nou echt zijn: basically een bestand dat vertelt hoe een letter
+                        eruitziet. Het verschil tussen een typeface (het ontwerp) en een font (het bestand) kwam aan
+                        bod, net als glyphs (verschillende versies van een letter), ligatures (samengevoegde tekens) en
+                        kerning (slimme spatiëring). Daarna doken we in OpenType-features zoals alternatieve cijfers,
+                        small caps en stylistic sets. Ook variable fonts kwamen langs — één bestand dat meerdere stijlen
+                        aankan. Superhandig en modern.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            OpenType-fonts kunnen veel meer dan alleen letters laten zien — fractions, alternates,
+                            swashes, you name it.
+                        </li>
+                        <li>
+                            Variable fonts besparen gewicht én geven je als ontwerper veel meer controle.
+                        </li>
+                        <li>
+                            Goed gebruik van typografie maakt tekst echt véél fijner om te lezen.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 4 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd4-toggle" class="nerdToggle" hidden>
+            <label for="nerd4-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 4</p>
+                    <small>07 maart '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Wat kun je met <span class="cijferPaars">GSAP</span></h3>
+                        <small>Cassie Evans</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>GSAP is een superkrachtige animatietoolkit waarmee je echt alles kunt animeren wat je maar wilt —
+                        vooral met scroll en interactie.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Cassie nam ons mee in de wereld van animaties met GSAP (GreenSock Animation Platform). Ze liet
+                        verschillende scroll-driven animaties zien en gaf uitleg over handige utilities zoals
+                        gsap.utils.random() (voor natuurlijke variatie), mapRange, wrap en pipe(). Ook leerden we dat je
+                        animaties soepeler maakt met easing, en je kunt die eases zelfs visueel aanpassen. Yoyo laat
+                        animaties heen en weer gaan. Verder kwamen er helper functions en container animations voorbij,
+                        die je code overzichtelijker en herbruikbaarder maken. En met matchMedia() kun je responsive
+                        animaties maken.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            GSAP is dé toolkit als je serieus aan de slag wilt met web-animaties.
+                        </li>
+                        <li>
+                            gsap.utils zit vol slimme tools om animaties natuurlijker en dynamischer te maken.
+                        </li>
+                        <li>
+                            Easing maakt echt het verschil — “let the ease do the work”.
+                        </li>
+                        <li>
+                            Yoyo = animaties die netjes teruggaan naar het begin (superhandig).
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 5 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd5-toggle" class="nerdToggle" hidden>
+            <label for="nerd5-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 5</p>
+                    <small>10 maart '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>De kunst van <span class="cijferPaars">Responsive</span> webdesign</h3>
+                        <small>Nils Binder</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Moderne webdesign draait om flexibiliteit: ontwerpen die meebewegen met inhoud, schermgrootte en
+                        context.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>In plaats van alles pixel-perfect vast te zetten, moeten we ontwerpen met verandering in
+                        gedachten. Dankzij moderne CSS kunnen we layouts bouwen die zich aanpassen aan verschillende
+                        schermformaten en content. Waar we vroeger werkten met vaste breedtes, gebruiken we nu functies
+                        als min(), max(), clamp() en margin-inline om flexibel te blijven.
+
+                        Ook is het belangrijk dat designers en developers dezelfde taal spreken. Figma en CSS delen veel
+                        units, maar CSS biedt ook extras zoals em, ch, vw en vh. Door consistent te werken met eenheden
+                        verbeter je samenwerking én het eindresultaat.
+
+                        En niet vergeten: whitespace is waardevol — het draagt bij aan rust, leesbaarheid en visuele
+                        hiërarchie. Tot slot kun je met viewport- en container-gebaseerde eenheden zoals vh, qi en qmax
+                        superschaalbare layouts maken.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            Gebruik min(), max() en clamp() voor flexibele wrappers.
+                        </li>
+                        <li>
+                            Whitespace = belangrijk design-element, geen verspilling.
+
+                        </li>
+                        <li>
+                            Denk in responsive units in plaats van vaste pixels.
+                        </li>
+                        <li>
+                            Figma gebruikt vergelijkbare units — spreek dezelfde taal als designer/dev.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 6 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd6-toggle" class="nerdToggle" hidden>
+            <label for="nerd6-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 6</p>
+                    <small>12 maart '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3><span class="cijferPaars">Imperative</span> vs. <span class="cijferPaars">Declerative</span>
+                            design</h3>
+                        <small>Jeremy Keith</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Declaratief programmeren gaat over zeggen wat je wilt, imperatief over hoe je het wilt.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Bij imperatief programmeren beschrijf je stap voor stap wat er moet gebeuren — zoals in
+                        JavaScript met loops en if/else. Declaratief programmeren laat juist de uitvoering over aan de
+                        browser of het systeem, zoals in HTML of CSS. Het vraagt een andere mindset: minder controle,
+                        maar meer flexibiliteit. In design-systemen werkt declaratief denken beter schaalbaar.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            HTML en CSS zijn declaratief, JS is meestal imperatief.
+                        </li>
+                        <li>
+                            Declaratief denken = meer vertrouwen op systemen, minder micromanagen.
+                        </li>
+                        <li>
+                            Designsystemen profiteren van regels in plaats van losse elementen.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 7 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd7-toggle" class="nerdToggle" hidden>
+            <label for="nerd7-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 7</p>
+                    <small>17 maart '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Illustraties met <span class="cijferPaars">CSS</span></h3>
+                        <small>Julia Miocene</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Met alleen CSS kun je complexe illustraties en animaties maken — geen JavaScript of SVG nodig.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Julia laat zien dat CSS meer is dan opmaak: je kunt er complete tekeningen mee bouwen door alles
+                        op te bouwen uit div elementen en pseudo-elementen zoals ::before en ::after. Elk onderdeel
+                        wordt gepositioneerd met position: absolute binnen een relatief ouder-element. Voor beweging
+                        gebruik je transform en transform-origin als draaipunt. Door creatief om te gaan met dingen
+                        als clip-path, border-radius en gradients, ontstaan er echte illustraties en animaties.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            Alles kan een zijn: hoofd, ogen, armen — het is lego met CSS.
+                        </li>
+                        <li>
+                            transform-origin is superkrachtig voor animatie vanuit het juiste punt.
+                        </li>
+                        <li>
+                            CSS pseudo-elementen en positionering zijn genoeg voor hele tekeningen.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 8 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd8-toggle" class="nerdToggle" hidden>
+            <label for="nerd8-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 8</p>
+                    <small>03 april '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Kijken naar oude <span class="cijferPaars">technieken</span></h3>
+                        <small>Rosa</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Rosa werkt als technische maker met een echte hacker- en DIY-mentaliteit, waarbij ze alles zelf
+                        bedenkt én zelf bouwt.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Rosa komt uit CMD, maar maakt inmiddels van alles zelf: livesets, installaties, systemen — noem
+                        het maar op. Ze vertrouwt niet op standaard tools of platforms, maar bouwt liever haar eigen
+                        CMS, draait haar eigen servers en maakt haar eigen geluid. Alles met een soort rauwe, eerlijke
+                        stijl. Ze gebruikt tools als ImageMagick en Bash gewoon in de terminal en doet veel met e-waste
+                        en audiohacking. Niks gelikt, juist bewust een beetje rommelig. Dat hoort bij haar werkwijze.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            Je hoeft niet afhankelijk te zijn van bestaande tools: maak het zelf.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 9 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd9-toggle" class="nerdToggle" hidden>
+            <label for="nerd9-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 9</p>
+                    <small>09 april '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Printers, Bonnetjes en Kassasystemen</h3>
+                        <small>Niels Leenheer</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Receipt printers gebruiken oude, maar krachtige printertalen als ESC/POS of StarPRNT — en die kun
+                        je met moderne web APIs aansturen.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Receipt printers (zoals je ziet bij kassas) gebruiken talen als ESC/POS of StarPRNT om tekst,
+                        stijlen, QR-codes of barcodes te printen. Niels maakte de ReceiptPrinterEncoder library, waarmee
+                        je ESC/POS- of StarPRNT-commandos kunt bouwen in de browser of via Node.js. Printen in de
+                        browser werkt via WebUSB, WebSerial of WebBluetooth — maar alleen in Chromium browsers, en
+                        netwerkprinters werken daar niet direct. Vanaf een Node-server heb je meer controle met bijv.
+                        NetworkReceiptPrinter.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>
+                            Niels zijn tool maakt printen veel makkelijker.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 10 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd10-toggle" class="nerdToggle" hidden>
+            <label for="nerd10-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 10</p>
+                    <small>16 april '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3><span class="cijferPaars">Accesibility</span> meetup</h3>
+                        <small>Erik Kroes</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Alternatieven missen of zijn niet goed genoeg, waardoor mensen met een beperking belangrijke
+                        informatie kunnen missen.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Veel content mist goede tekstalternatieven, zoals ondertitels bij video’s, transcripties bij
+                        podcasts, of duidelijke alt-teksten bij afbeeldingen. Dit zorgt ervoor dat bijvoorbeeld
+                        slechthorenden, doven en slechtzienden niet volledig kunnen meedoen of de boodschap missen. Het
+                        is dus essentieel om altijd goede alternatieven te bieden zodat iedereen de inhoud kan volgen en
+                        gebruiken.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>Alt-teksten bij afbeeldingen zijn vaak te kort, nietszeggend of zelfs helemaal afwezig.</li>
+                        <li>Ondertiteling en transcripties voor video en audio worden regelmatig vergeten, waardoor de
+                            content ontoegankelijk wordt.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 11 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd11-toggle" class="nerdToggle" hidden>
+            <label for="nerd11-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 11</p>
+                    <small>16 april '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3><span class="cijferPaars">Accesibility</span> meetup</h3>
+                        <small>Nienke de Keijzer</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Nienke verbeterde de GVB-app door toegankelijkheid centraal te stellen, waardoor de app beter
+                        werkt voor mensen met een beperking.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Tijdens haar afstudeerproject bij CMD ontdekte Nienke dat de GVB-app slecht toegankelijk was
+                        voor mensen met een beperking. Ze ontwierp een nieuwe, toegankelijkere versie die GVB zo goed
+                        vond dat ze haar aanbevelingen overnamen en haar zelfs aannamen. Dit laat zien dat echte
+                        toegankelijkheid meer is dan regels: het gaat om bruikbaarheid voor iedereen, met kleine
+                        aanpassingen die een groot verschil maken.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>Betrek altijd gebruikers met beperkingen bij het ontwerp om waardevolle feedback te krijgen.
+                        </li>
+                        <li>Begin met toegankelijkheid vanaf het begin en test met diverse gebruikersgroepen.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 12 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd12-toggle" class="nerdToggle" hidden>
+            <label for="nerd12-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 12</p>
+                    <small>14 mei '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Op bezoek bij <span class="cijferPaars">iO digital</span></h3>
+                        <small>Dave Bitter, Steve Jonk & Clarke Verdel</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Tijdens deze weekly nerd werd er verteld over voice-gestuurde Ai's en een twitter-bot die
+                        gebruikt word door onlyfans.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Dave Bitter, teammanager front-end bij agency iO, vertelde over hun aanpak waarbij ‘experience
+                        everything’ centraal staat. Van digitale nomaden gaan we naar always-on gebruikers, die via
+                        allerlei touchpoints en apparaten benaderd worden. Ze werken met real-time data en
+                        AI-oplossingen, zoals Laika, een AI-bot die scholen gebruiken voor social media interactie. Ook
+                        sprak hij over voice interfaces via web API’s en tools als ElevenLabs. Verder kwamen een Twitter
+                        follow-bot van Steve Jonk en testautomatisering bij Miele door Clarke Verdel aan bod.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>Voice interfaces worden steeds belangrijker – natuurlijke interactie via AI en spraak-API’s.
+                        </li>
+                        <li>Laika is een AI-socialbot die echt in gesprek gaat en al door scholen wordt ingezet.
+                        </li>
+                        <li>Testen van componenten moet zoveel mogelijk lijken op hoe een echte gebruiker ermee omgaat
+                            (Clarke Verdel).
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Nerd 13 -->
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd13-toggle" class="nerdToggle" hidden>
+            <label for="nerd13-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 13</p>
+                    <small>21 mei '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Op bezoek bij <span class="cijferPaars">Q42</span></h3>
+                        <small>Q42</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Q42 ontwikkelt technologie die werkt voor mensen, met toegankelijkheid, innovatie en
+                        gebruiksvriendelijkheid als vaste kernwaarden..</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Sinds 2000 werkt Q42 aan digitale producten die het dagelijks leven makkelijker en slimmer maken.
+                        Ze zijn betrokken bij impactvolle projecten zoals HEMA, het Rijksmuseum en Philips Hue, en
+                        zetten daarbij stevig in op toegankelijkheid. Toegankelijk denken zit diep in hun cultuur: ze
+                        stellen zichzelf steeds vier vragen die inspelen op beperkingen in zien, horen, bewegen of
+                        begrijpen. Vanuit hun overtuiging dat technologie voor iedereen moet werken, bereiden ze zich
+                        actief voor op de European Accessibility Act die vanaf 28 juni 2025 geldt. Hun werkwijze wordt
+                        versterkt door interne innovatieprogramma’s zoals WOOtcamp en passiedagen, waarin ruimte is om
+                        te experimenteren met nieuwe ideeën.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>Q42 benadert toegankelijkheid structureel door zich steeds af te vragen: wat als iemand iets
+                            niet goed kan zien, horen, bewegen of begrijpen?
+                        </li>
+                        <li>Met projecten als Sensemath en partners zoals Hack the Planet laten ze zien dat technologie
+                            ook maatschappelijke impact kan maken.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd14-toggle" class="nerdToggle" hidden>
+            <label for="nerd14-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 14</p>
+                    <small>28 mei '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Digitale Toegankelijkheid <span class="cijferPaars">in de praktijk</span></h3>
+                        <small>Marieke de Hoop</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p>Marieke legt uit hoe belangrijk digitale toegankelijkheid is voor een grote groep mensen, wat ze
+                        in haar werk doet, en wat de gevolgen kunnen zijn als organisaties niet voldoen aan de regels.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>32% van de Nederlanders heeft een permanente beperking, en daarnaast zijn er ook tijdelijke en
+                        situationele beperkingen. Marieke helpt als expert met audits, advies en trainingen om digitale
+                        producten toegankelijker te maken. Vanaf 28 juni geldt de European Accessibility Act, met boetes
+                        tot €20 miljoen voor niet-naleving.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>Veel mensen hebben beperkingen – 5,5 miljoen Nederlanders hebben een permanente beperking,
+                            en daarnaast spelen tijdelijke of situationele factoren (zoals zon op je scherm) ook een
+                            rol.
+                        </li>
+                        <li>Nieuwe wetgeving – De European Accessibility Act verplicht toegankelijkheid voor o.a.
+                            webshops (met uitzonderingen), en niet-naleving kan hoge boetes opleveren.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="nerdWrapper">
+            <input type="checkbox" id="nerd15-toggle" class="nerdToggle" hidden>
+            <label for="nerd15-toggle" class="wrapperDicht">
+                <section class="textLinks">
+                    <p>👓 Nerd 15</p>
+                    <small>04 juni '25</small>
+                </section>
+                <div class="nerdDicht">
+                    <div>
+                        <h3>Pre <span class="cijferPaars">CSS day</span> event</h3>
+                        <small>Nils Binder, Miriam Suzanne</small>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </label>
+            <div class="nerdOpen">
+                <section class="openEen">
+                    <h4>De presentatie in 1 zin</h4>
+                    <p> Miriam benadrukt dat het web flexibel en gebruikersgericht moet zijn, waarbij de voorkeuren van
+                        de
+                        gebruiker altijd voorop staan.
+                    </p>
+                </section>
+                <section class="openTwee">
+                    <h4>Samenvatting</h4>
+                    <p>Het web is niet zoals print – we hebben minder controle, maar juist meer mogelijkheden.
+                        Gebruikers moeten zelf hun voorkeuren kunnen instellen, en bij conflicten in stijlen (zoals in
+                        de CSS-cascade) moet de gebruiker het laatste woord hebben.</p>
+                </section>
+                <section class="openTwee">
+                    <h4>Wat neem ik mee</h4>
+                    <ul>
+                        <li>Gebruikerscontrole boven alles – In tegenstelling tot print, moet het web aanpasbaar zijn,
+                            en gebruikers moeten hun eigen instellingen kunnen kiezen.
+                            rol.
+                        </li>
+                        <li>Het web is voor iedereen – Flexibiliteit en aanpasbaarheid zijn cruciaal, zodat het web
+                            toegankelijk en bruikbaar blijft voor verschillende behoeften.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
